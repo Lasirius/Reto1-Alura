@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario:#6482AD;
+    --color-terciario:#F3F3F3 ;
+    --color-cuaternario:#7FA1C3;
+
+    --fuente-primaria:"Matemasie", system-ui;
+    --fuente-secundaria:"Nerko One", system-ui;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:var(--color-cuaternario);
+    justify-content:space-between;
+}
+.contenedor{
+    margin:auto 40px 80px auto;
+    width: 90%;
+    display:grid;
+    padding: 0.6rem;
+    grid-template-columns: 2.5fr 1fr;
+    justify-content: space-around;
+    align-items: end;
+    gap:1rem;
+    min-height: calc(100vh - 80px - 56px);
+}
+
+.encriptador{
+    height: 95%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caja_Texto{
+    height: 100%;
+    font-family:var(--fuente-primaria);
+    color:var(--color-primario);
+    font-size:1.5rem;
+    background-color:var(--color-terciario);
+    border-radius:12px;
+    margin: 2%;
+}
+
+.alerta{
+    font-family:var(--fuente-secundaria);
+    color:var(--color-primario);
+    font-size:1.5rem;
+    justify-content:center;
+}
+
+.encriptador_Botones{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 24px;
+    border: 3px solid --color-primario;
+}
+
+.boton_Encriptar{
+    font-family:var(--fuente-primaria);
+    color:var(--color-primario);
+    font-size:1.5rem;
+    background-color:var(--color-secundario);
+    text-align: center;
+    border-radius:12px;
+}
+
+.boton_Desencriptar{
+    font-family:var(--fuente-primaria);
+    color:var(--color-primario);
+    font-size:1.5rem;
+    background-color:var(--color-secundario);
+    text-align: center;
+    border-radius:12px;
+    
+}
+
+.texto_Encriptado{
+    background-color:var(--color-terciario);
+    height:100%;
+    width: 100%;
+    border-radius: 12px;
+}
+.informacion_Sin_Texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.imagen{
+    height: 30%;
+    margin: 12%;
+}
+
+.sin_texto{
+    display: flex;
+    justify-content: center;
+    font-family:var(--fuente-secundaria);
+    color:var(--color-primario);
+    font-size:1.5rem;
+}
+
+.ingresalo{
+    display:flex;
+    justify-content: center;
+    font-family: var(--fuente-secundaria);
+    color:var(--color-primario);
+    font-size:1rem;
+}
+
+.informacion_Con_Texto{
+    background-color:var(--color-terciario);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.boton_Copiar{
+    font-family:var(--fuente-primaria);
+    color:var(--color-primario);
+    font-size:1.5rem;
+    background-color:var(--color-secundario);
+    text-align:center;
+    border-radius:12px;
+    
+}
+
+.resultados{
+    height: 90%;
+    font-family:var(--fuente-primaria);    
+    color:var(--color-primario);
+    font-size:1.5rem; 
+}
+
+footer{
+    background-color:var(--color-terciario);
+    display:flex;
+    justify-content: center;
+    font-family: var(--fuente-secundaria);
+    color:var(--color-primario);
+    font: size 1.5rem;
+}

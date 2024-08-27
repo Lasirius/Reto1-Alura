@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encriptador_de_Texto</title>
+</head>
+<body>
+        <header>
+
+        </header>
+        <main>
+           <div class="contenedor">
+                <div class="encriptador">
+                    <input  type="text" class="caja_Texto" placeholder="Ingresa el texto aquí" id="mensaje"></input> 
+                    <p class="alerta"> No se aceptarán mayúsculas ni carácteres especiales!</p>
+                    <div class="encriptador_Botones">
+                        <button class="boton_Encriptar" id="encriptarB">Encriptar</button>
+                        <button class="boton_Desencriptar" id="desencriptarB">Desencriptar</button>
+                    </div>
+                </div> 
+                <div class="texto_Encriptado">
+                    <div class="informacion_Sin_Texto" id="informacionSinTexto">
+                        <img class="imagen" src="Lupa.jpg">
+                        <p class="sin_texto">No has ingresado ningún texto</p>
+                        <p class="ingresalo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                     <div class="informacion_Con_Texto" id="informacionConTexto"> 
+                        <p class="resultados" id="codigo"></p>
+                        <button class="boton_Copiar" id="copiarB">Copiar</button>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        <footer>
+            <p>Creado por Carolina Restrepo Montoya en agosto de 2024</p>
+        </footer>
+        <script src="./app.js"></script>
+</body>
+</html>
